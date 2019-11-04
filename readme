@@ -1,0 +1,5 @@
+将本仓库放到同decaf源代码文件夹（DECAF仓库的下一级）同一级文件夹中使用
+
+january@vostro3470:~/workplace/DECAF-1.91$ ls 
+decaf  **DECAF-test**  docker  docs  image  LICENSE  README.md
+
