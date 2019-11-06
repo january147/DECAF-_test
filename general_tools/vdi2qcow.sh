@@ -10,8 +10,9 @@ newname=${1%.*}.qcow2
 
 usage="vdi2qcow <vdi image>"
 
-if [ "$1" - "-h" ];then
+if [ "$1" = "-h" ];then
     echo $usage
+fi
 
 if [ -z "$oldname" ] || [ -z "$newname" ];then
     echo "please input valid image name"
