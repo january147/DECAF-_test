@@ -1,3 +1,4 @@
+在decaf源代码目录下运行以下命令编译decaf
 默认（只启用VMI）
     ./configure
     make
