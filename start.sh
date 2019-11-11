@@ -4,6 +4,10 @@
 
 set -o errexit
 
+# 用来启动虚拟机
+# ./start.sh 启动decaf
+# ./start.sh -2 使用自己电脑上安装的qemu启动
+
 while getopts "12" choose
 do
     if [ $choose != "?" ];then
