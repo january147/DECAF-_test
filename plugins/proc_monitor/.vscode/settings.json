@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "decaf_types.h": "c",
+        "qemu-common.h": "c",
+        "decaf_callback.h": "c",
+        "decaf_callback_common.h": "c",
+        "cpu.h": "c",
+        "vmi_callback.h": "c"
+    }
+}
