@@ -1,5 +1,27 @@
-将本仓库放到同decaf源代码文件夹（DECAF仓库的下一级）同一级文件夹中使用
+1. 将本仓库放到同decaf源代码文件夹（DECAF仓库的下一级）同一级文件夹中使用
 
-january@vostro3470:~/workplace/DECAF-1.91$ ls 
-decaf  **DECAF-test**  docker  docs  image  LICENSE  README.md
+    january@vostro3470:~/workplace/DECAF-1.91$ ls 
+    decaf  **DECAF-test**  docker  docs  image  LICENSE  README.md
 
+2. 在decaf源代码目录下运行以下命令编译decaf
+    默认（只启用VMI）
+        ./configure
+        make
+
+    启用TCG tainting
+        ./configure --enable-tcg-taint
+        make
+       
+    启用TCG IR logging
+        ./configure --enable-tcg-ir-log
+        make
+        
+    启用DECAF++
+        ./configure --enable-2nd-ccache --enable-opt-smem
+        make
+
+3. 记得安装vncviewer(远程连接decaf++才能看到显示界面)和qemu(使用qemu来创建磁盘文件和转换磁盘文件格式)
+
+4. 经过我的测试decaf++只能运行win系统，运行linux系统(只有ubuntu12.04可以启动，但启用VMI后还是会崩溃)会崩溃
+
+5. 建议使用virualbox安装win7 32位(信息门户的正版软件里边有32位的win7)后通过本项目中general tools中的vdi2qcow.sh将virtualbox的vdi格式磁盘文件转换成qemu可用的qcow2，然后就可以使用decaf++运行了
