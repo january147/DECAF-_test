@@ -37,7 +37,7 @@ fi
 # run
 if [ "$choose" = "1" ];then
     # DECAF++用的qemu比较老，需要安装VNCviewer来显示界面
-    vncviewer 127.0.0.1:5900
+    vncviewer 127.0.0.1:5900 &
     option="$info_display $mem $mouse $network"
     $machine1 $option -hda $hd2
 else
